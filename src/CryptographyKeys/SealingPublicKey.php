@@ -1,12 +1,12 @@
 <?php
 declare(strict_types=1);
-namespace Paragonie\Sapient\CryptographyKeys;
+namespace ParagonIE\Sapient\CryptographyKeys;
 
-use Paragonie\Sapient\CryptographyKey;
+use ParagonIE\Sapient\CryptographyKey;
 
 /**
  * Class SealingPublicKey
- * @package Paragonie\Sapient
+ * @package ParagonIE\Sapient
  */
 class SealingPublicKey extends CryptographyKey
 {

@@ -1,10 +1,10 @@
 <?php
 declare(strict_types=1);
-namespace Paragonie\Sapient\Exception;
+namespace ParagonIE\Sapient\Exception;
 
 /**
  * Class InvalidMessage
- * @package Paragonie\Sapient\Exception
+ * @package ParagonIE\Sapient\Exception
  */
 class InvalidMessageException extends \Exception
 {

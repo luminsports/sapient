@@ -1,10 +1,10 @@
 <?php
 declare(strict_types=1);
 
-namespace Paragonie\Sapient\Traits;
+namespace ParagonIE\Sapient\Traits;
 
 use ParagonIE\ConstantTime\Base64UrlSafe;
-use Paragonie\Sapient\CryptographyKeys\{
+use ParagonIE\Sapient\CryptographyKeys\{
     SealingPublicKey,
     SealingSecretKey,
     SharedAuthenticationKey,
@@ -12,16 +12,16 @@ use Paragonie\Sapient\CryptographyKeys\{
     SigningPublicKey,
     SigningSecretKey
 };
-use Paragonie\Sapient\Exception\InvalidMessageException;
+use ParagonIE\Sapient\Exception\InvalidMessageException;
 use Psr\Http\Message\{
     RequestInterface,
     ResponseInterface
 };
-use Paragonie\Sapient\Simple;
+use ParagonIE\Sapient\Simple;
 
 /**
  * Trait StringSugar
- * @package Paragonie\Sapient
+ * @package ParagonIE\Sapient
  *
  * @method RequestInterface authenticateRequestWithSharedKey(RequestInterface $request, SharedAuthenticationKey $key)
  * @method ResponseInterface authenticateResponseWithSharedKey(ResponseInterface $response, SharedAuthenticationKey $key)

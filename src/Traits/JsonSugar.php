@@ -1,9 +1,9 @@
 <?php
 declare(strict_types=1);
 
-namespace Paragonie\Sapient\Traits;
+namespace ParagonIE\Sapient\Traits;
 
-use Paragonie\Sapient\CryptographyKeys\{
+use ParagonIE\Sapient\CryptographyKeys\{
     SealingPublicKey,
     SealingSecretKey,
     SharedAuthenticationKey,
@@ -11,7 +11,7 @@ use Paragonie\Sapient\CryptographyKeys\{
     SigningPublicKey,
     SigningSecretKey
 };
-use Paragonie\Sapient\Exception\InvalidMessageException;
+use ParagonIE\Sapient\Exception\InvalidMessageException;
 use Psr\Http\Message\{
     RequestInterface,
     ResponseInterface
@@ -19,7 +19,7 @@ use Psr\Http\Message\{
 
 /**
  * Trait JsonSugar
- * @package Paragonie\Sapient
+ * @package ParagonIE\Sapient
  *
  * @method RequestInterface authenticateRequestWithSharedKey(RequestInterface $request, SharedAuthenticationKey $key)
  * @method ResponseInterface authenticateResponseWithSharedKey(ResponseInterface $response, SharedAuthenticationKey $key)

@@ -1,7 +1,7 @@
 <?php
-namespace Paragonie\Sapient\UnitTests;
+namespace ParagonIE\Sapient\UnitTests;
 
-use Paragonie\Sapient\CryptographyKeys\{
+use ParagonIE\Sapient\CryptographyKeys\{
     SealingPublicKey,
     SealingSecretKey
 };
@@ -9,7 +9,7 @@ use PHPUnit\Framework\TestCase;
 
 /**
  * Class SapientTest
- * @package Paragonie\Sapient\UnitTests
+ * @package ParagonIE\Sapient\UnitTests
  */
 class KeyExchangeTest extends TestCase
 {

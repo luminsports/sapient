@@ -1,12 +1,12 @@
 <?php
-namespace Paragonie\Sapient\UnitTests;
+namespace ParagonIE\Sapient\UnitTests;
 
-use Paragonie\Sapient\CryptographyKeys\{
+use ParagonIE\Sapient\CryptographyKeys\{
     SealingPublicKey,
     SealingSecretKey,
     SharedEncryptionKey
 };
-use Paragonie\Sapient\Simple;
+use ParagonIE\Sapient\Simple;
 use PHPUnit\Framework\TestCase;
 
 class SimpleTest extends TestCase

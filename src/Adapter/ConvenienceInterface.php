@@ -1,11 +1,11 @@
 <?php
 declare(strict_types=1);
-namespace Paragonie\Sapient\Adapter;
+namespace ParagonIE\Sapient\Adapter;
 
-use Paragonie\Sapient\Exception\{
+use ParagonIE\Sapient\Exception\{
     InvalidMessageException
 };
-use Paragonie\Sapient\CryptographyKeys\{
+use ParagonIE\Sapient\CryptographyKeys\{
     SealingPublicKey,
     SharedAuthenticationKey,
     SharedEncryptionKey,
@@ -18,7 +18,7 @@ use Psr\Http\Message\{
 
 /**
  * Interface ConvenienceInterface
- * @package Paragonie\Sapient\Adapter
+ * @package ParagonIE\Sapient\Adapter
  */
 interface ConvenienceInterface
 {

@@ -1,12 +1,12 @@
 <?php
-namespace Paragonie\Sapient\UnitTests\Adapter;
+namespace ParagonIE\Sapient\UnitTests\Adapter;
 
 use GuzzleHttp\Psr7\{
     Request,
     Response
 };
-use Paragonie\Sapient\Adapter\Guzzle;
-use Paragonie\Sapient\CryptographyKeys\{
+use ParagonIE\Sapient\Adapter\Guzzle;
+use ParagonIE\Sapient\CryptographyKeys\{
     SealingPublicKey,
     SealingSecretKey,
     SharedAuthenticationKey,

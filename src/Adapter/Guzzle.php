@@ -1,6 +1,6 @@
 <?php
 declare(strict_types=1);
-namespace Paragonie\Sapient\Adapter;
+namespace ParagonIE\Sapient\Adapter;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\Psr7\{
@@ -9,17 +9,17 @@ use GuzzleHttp\Psr7\{
 };
 use GuzzleHttp\Psr7\Utils;
 use ParagonIE\ConstantTime\Base64UrlSafe;
-use Paragonie\Sapient\Exception\{
+use ParagonIE\Sapient\Exception\{
     InvalidMessageException
 };
-use Paragonie\Sapient\CryptographyKeys\{
+use ParagonIE\Sapient\CryptographyKeys\{
     SealingPublicKey,
     SharedAuthenticationKey,
     SharedEncryptionKey,
     SigningSecretKey
 };
-use Paragonie\Sapient\Sapient;
-use Paragonie\Sapient\Simple;
+use ParagonIE\Sapient\Sapient;
+use ParagonIE\Sapient\Simple;
 use Psr\Http\Message\{
     RequestInterface,
     ResponseInterface,
@@ -28,7 +28,7 @@ use Psr\Http\Message\{
 
 /**
  * Class Guzzle
- * @package Paragonie\Sapient\Adapter
+ * @package ParagonIE\Sapient\Adapter
  */
 class Guzzle implements AdapterInterface, ConvenienceInterface
 {

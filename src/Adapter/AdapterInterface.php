@@ -1,13 +1,13 @@
 <?php
 declare(strict_types=1);
-namespace Paragonie\Sapient\Adapter;
+namespace ParagonIE\Sapient\Adapter;
 
 use Psr\Http\Message\StreamInterface;
 
 
 /**
  * Interface AdapterInterface
- * @package Paragonie\Sapient\Adapter
+ * @package ParagonIE\Sapient\Adapter
  */
 interface AdapterInterface
 {

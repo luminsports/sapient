@@ -1,9 +1,9 @@
 <?php
-namespace Paragonie\Sapient\Exception;
+namespace ParagonIE\Sapient\Exception;
 
 /**
  * Class HeaderMissing
- * @package Paragonie\Sapient\Exception
+ * @package ParagonIE\Sapient\Exception
  */
 class HeaderMissingException extends \Exception
 {

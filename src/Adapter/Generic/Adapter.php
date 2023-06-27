@@ -1,13 +1,13 @@
 <?php
 declare(strict_types=1);
-namespace Paragonie\Sapient\Adapter\Generic;
+namespace ParagonIE\Sapient\Adapter\Generic;
 
-use Paragonie\Sapient\Adapter\AdapterInterface;
+use ParagonIE\Sapient\Adapter\AdapterInterface;
 use Psr\Http\Message\StreamInterface;
 
 /**
  * Class Guzzle
- * @package Paragonie\Sapient\Adapter
+ * @package ParagonIE\Sapient\Adapter
  */
 class Adapter implements AdapterInterface
 {

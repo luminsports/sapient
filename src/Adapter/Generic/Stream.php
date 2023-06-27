@@ -1,12 +1,12 @@
 <?php
 declare(strict_types=1);
-namespace Paragonie\Sapient\Adapter\Generic;
+namespace ParagonIE\Sapient\Adapter\Generic;
 
 use Psr\Http\Message\StreamInterface;
 
 /**
  * Class Stream
- * @package Paragonie\Sapient\Adapter\Generic
+ * @package ParagonIE\Sapient\Adapter\Generic
  *
  * This was copied from Slim Framework's implementation.
  *

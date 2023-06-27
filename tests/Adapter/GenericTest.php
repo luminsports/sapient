@@ -1,7 +1,7 @@
 <?php
-namespace Paragonie\Sapient\UnitTests\Adapter;
+namespace ParagonIE\Sapient\UnitTests\Adapter;
 
-use Paragonie\Sapient\Adapter\Generic\Adapter;
+use ParagonIE\Sapient\Adapter\Generic\Adapter;
 use PHPUnit\Framework\TestCase;
 use Psr\Http\Message\StreamInterface;
 

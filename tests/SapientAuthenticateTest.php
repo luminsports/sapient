@@ -1,20 +1,20 @@
 <?php
-namespace Paragonie\Sapient\UnitTests;
+namespace ParagonIE\Sapient\UnitTests;
 
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\Psr7\Response;
 use ParagonIE\ConstantTime\Base64UrlSafe;
-use Paragonie\Sapient\Adapter\Guzzle;
-use Paragonie\Sapient\Exception\InvalidMessageException;
-use Paragonie\Sapient\CryptographyKeys\{
+use ParagonIE\Sapient\Adapter\Guzzle;
+use ParagonIE\Sapient\Exception\InvalidMessageException;
+use ParagonIE\Sapient\CryptographyKeys\{
     SharedAuthenticationKey
 };
-use Paragonie\Sapient\Sapient;
+use ParagonIE\Sapient\Sapient;
 use PHPUnit\Framework\TestCase;
 
 /**
  * Class SapientTest
- * @package Paragonie\Sapient\UnitTests
+ * @package ParagonIE\Sapient\UnitTests
  */
 class SapientAuthenticateTest extends TestCase
 {
@@ -58,8 +58,8 @@ class SapientAuthenticateTest extends TestCase
     }
 
     /**
-     * @covers \Paragonie\Sapient\Adapter\Guzzle::createSymmetricAuthenticatedJsonRequest()
-     * @covers \Paragonie\Sapient\Sapient::verifySymmetricAuthenticatedRequest()
+     * @covers \ParagonIE\Sapient\Adapter\Guzzle::createSymmetricAuthenticatedJsonRequest()
+     * @covers \ParagonIE\Sapient\Sapient::verifySymmetricAuthenticatedRequest()
      */
     public function testSignedJsonRequest()
     {

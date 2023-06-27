@@ -1,15 +1,15 @@
 <?php
 declare(strict_types=1);
-namespace Paragonie\Sapient;
+namespace ParagonIE\Sapient;
 
 use ParagonIE\ConstantTime\Base64UrlSafe;
-use Paragonie\Sapient\Adapter\AdapterInterface;
-use Paragonie\Sapient\Adapter\Generic\Adapter;
-use Paragonie\Sapient\Exception\{
+use ParagonIE\Sapient\Adapter\AdapterInterface;
+use ParagonIE\Sapient\Adapter\Generic\Adapter;
+use ParagonIE\Sapient\Exception\{
     HeaderMissingException,
     InvalidMessageException
 };
-use Paragonie\Sapient\CryptographyKeys\{
+use ParagonIE\Sapient\CryptographyKeys\{
     SealingPublicKey,
     SealingSecretKey,
     SharedAuthenticationKey,
@@ -17,7 +17,7 @@ use Paragonie\Sapient\CryptographyKeys\{
     SigningPublicKey,
     SigningSecretKey
 };
-use Paragonie\Sapient\Traits\JsonSugar;
+use ParagonIE\Sapient\Traits\JsonSugar;
 use Psr\Http\Message\{
     RequestInterface,
     ResponseInterface,
@@ -27,7 +27,7 @@ use SodiumException;
 
 /**
  * Class Sapient
- * @package Paragonie\Sapient
+ * @package ParagonIE\Sapient
  *
  * These methods are provided by the adapter:
  * @method RequestInterface createSymmetricAuthenticatedJsonRequest(string $method, string $uri, array $arrayToJsonify, SharedAuthenticationKey $key, array $headers = [])

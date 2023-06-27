@@ -1,12 +1,12 @@
 <?php
 declare(strict_types=1);
-namespace Paragonie\Sapient;
+namespace ParagonIE\Sapient;
 
 use ParagonIE\ConstantTime\Base64UrlSafe;
 
 /**
  * Class CryptographyKey
- * @package Paragonie\Sapient
+ * @package ParagonIE\Sapient
  */
 class CryptographyKey
 {

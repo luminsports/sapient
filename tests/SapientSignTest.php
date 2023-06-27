@@ -1,22 +1,22 @@
 <?php
-namespace Paragonie\Sapient\UnitTests;
+namespace ParagonIE\Sapient\UnitTests;
 
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\Psr7\Response;
 use ParagonIE\ConstantTime\Base64UrlSafe;
-use Paragonie\Sapient\Adapter\Guzzle;
-use Paragonie\Sapient\CryptographyKeys\{
+use ParagonIE\Sapient\Adapter\Guzzle;
+use ParagonIE\Sapient\CryptographyKeys\{
     SigningPublicKey,
     SigningSecretKey
 };
-use Paragonie\Sapient\Exception\HeaderMissingException;
-use Paragonie\Sapient\Exception\InvalidMessageException;
-use Paragonie\Sapient\Sapient;
+use ParagonIE\Sapient\Exception\HeaderMissingException;
+use ParagonIE\Sapient\Exception\InvalidMessageException;
+use ParagonIE\Sapient\Sapient;
 use PHPUnit\Framework\TestCase;
 
 /**
  * Class SapientTest
- * @package Paragonie\Sapient\UnitTests
+ * @package ParagonIE\Sapient\UnitTests
  */
 class SapientSignTest extends TestCase
 {

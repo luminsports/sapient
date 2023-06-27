@@ -1,6 +1,6 @@
 # Sapient - Class Documentation
 
-Canonical name: `Paragonie\Sapient\Sapient`
+Canonical name: `ParagonIE\Sapient\Sapient`
 
 ## Important
 

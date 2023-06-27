@@ -1,17 +1,17 @@
 <?php
 declare(strict_types=1);
-namespace Paragonie\Sapient;
+namespace ParagonIE\Sapient;
 
-use Paragonie\Sapient\CryptographyKeys\{
+use ParagonIE\Sapient\CryptographyKeys\{
     SealingPublicKey,
     SealingSecretKey,
     SharedEncryptionKey
 };
-use Paragonie\Sapient\Exception\InvalidMessageException;
+use ParagonIE\Sapient\Exception\InvalidMessageException;
 
 /**
  * Class Simple
- * @package Paragonie\Sapient
+ * @package ParagonIE\Sapient
  */
 abstract class Simple
 {

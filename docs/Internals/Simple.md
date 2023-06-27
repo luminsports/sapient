@@ -1,6 +1,6 @@
 # Simple Encryption Abstraction
 
-Canonical name: `Paragonie\Sapient\Simple`
+Canonical name: `ParagonIE\Sapient\Simple`
 
 ## Shared-Key Encryption
 
@@ -18,8 +18,8 @@ Messages are Base64url encoded in transmission.
 ----
 
 * PHP: 
-  * `Paragonie\Sapient\Simple::encrypt()`
-  * `Paragonie\Sapient\Simple::decrypt()`
+  * `ParagonIE\Sapient\Simple::encrypt()`
+  * `ParagonIE\Sapient\Simple::decrypt()`
 
 ## Public-Key Encryption
 
@@ -58,5 +58,5 @@ Messages are Base64url encoded in transmission.
 ----
 
 * PHP: 
-  * `Paragonie\Sapient\Simple::seal()`
-  * `Paragonie\Sapient\Simple::unseal()`
+  * `ParagonIE\Sapient\Simple::seal()`
+  * `ParagonIE\Sapient\Simple::unseal()`
