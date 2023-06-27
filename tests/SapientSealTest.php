@@ -1,20 +1,20 @@
 <?php
-namespace ParagonIE\Sapient\UnitTests;
+namespace LuminSports\Sapient\UnitTests;
 
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\Psr7\Response;
 use ParagonIE\ConstantTime\Base64UrlSafe;
-use ParagonIE\Sapient\Adapter\Guzzle;
-use ParagonIE\Sapient\CryptographyKeys\{
+use LuminSports\Sapient\Adapter\Guzzle;
+use LuminSports\Sapient\CryptographyKeys\{
     SealingPublicKey,
     SealingSecretKey
 };
-use ParagonIE\Sapient\Sapient;
+use LuminSports\Sapient\Sapient;
 use PHPUnit\Framework\TestCase;
 
 /**
  * Class SapientTest
- * @package ParagonIE\Sapient\UnitTests
+ * @package LuminSports\Sapient\UnitTests
  */
 class SapientSealTest extends TestCase
 {

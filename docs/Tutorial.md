@@ -22,9 +22,9 @@ the server's secret key (so that the client can verify it came from the server):
 <?php
 /**
  * @var Psr\Http\Message\ResponseInterface $nakedResponse
- * @var ParagonIE\Sapient\Sapient $sapient
- * @var ParagonIE\Sapient\CryptographyKeys\SigningSecretKey $signingKey
- * @var ParagonIE\Sapient\CryptographyKeys\SealingPublicKey $clientPublicKey
+ * @var LuminSports\Sapient\Sapient $sapient
+ * @var LuminSports\Sapient\CryptographyKeys\SigningSecretKey $signingKey
+ * @var LuminSports\Sapient\CryptographyKeys\SealingPublicKey $clientPublicKey
  */
 $sealedResponse = $sapient->sealResponse($nakedResponse, $clientPublicKey);
 $signedResponse = $sapient->signResponse($sealedResponse, $signingKey);
@@ -42,7 +42,7 @@ To generate a new key, you can simply use the `generate()` method on the appropr
 
 ```php
 <?php
-use ParagonIE\Sapient\CryptographyKeys\{
+use LuminSports\Sapient\CryptographyKeys\{
     SealingSecretKey,
     SharedAuthenticationKey,
     SharedEncryptionKey,
@@ -76,7 +76,7 @@ To **load a `CryptographyKey` from a string**, simply pass it to the constructor
 
 ```php
 <?php
-use ParagonIE\Sapient\CryptographyKeys\SigningSecretKey;
+use LuminSports\Sapient\CryptographyKeys\SigningSecretKey;
 use ParagonIE\ConstantTime\Base64UrlSafe;
 
 /** @var string $yourEncodedStringHere*/

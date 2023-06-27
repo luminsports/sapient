@@ -1,25 +1,25 @@
 {
-  "name": "paragonie/sapient",
+  "name": "luminsports/sapient",
   "description": "Secure API Toolkit",
   "type": "library",
   "require": {
-    "php": "^7|^8",
-    "guzzlehttp/psr7": "^1",
-    "paragonie/constant_time_encoding": "^2",
+    "php": "^8.0",
+    "guzzlehttp/psr7": "^2.0",
+    "paragonie/constant_time_encoding": "^2.0",
     "paragonie/sodium_compat": ">= 1.15.4",
-    "psr/http-message": "^1"
+    "psr/http-message": "^2.0"
   },
   "require-dev": {
-    "guzzlehttp/guzzle": "^6|^7",
-    "phpunit/phpunit": "^6|^7|^8|^9",
-    "vimeo/psalm": "^2|^3|^4"
+    "guzzlehttp/guzzle": "^7.0",
+    "phpunit/phpunit": "^9.0",
+    "vimeo/psalm": "^4.0"
   },
   "suggest": {
     "guzzlehttp/guzzle": ">= 6.0 -- Sapient can be used a Guzzle adapter"
   },
   "autoload": {
     "psr-4": {
-      "ParagonIE\\Sapient\\": "src"
+      "LuminSports\\Sapient\\": "src"
     }
   },
   "license": "MIT",

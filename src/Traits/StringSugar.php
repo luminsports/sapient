@@ -1,10 +1,10 @@
 <?php
 declare(strict_types=1);
 
-namespace ParagonIE\Sapient\Traits;
+namespace LuminSports\Sapient\Traits;
 
 use ParagonIE\ConstantTime\Base64UrlSafe;
-use ParagonIE\Sapient\CryptographyKeys\{
+use LuminSports\Sapient\CryptographyKeys\{
     SealingPublicKey,
     SealingSecretKey,
     SharedAuthenticationKey,
@@ -12,16 +12,16 @@ use ParagonIE\Sapient\CryptographyKeys\{
     SigningPublicKey,
     SigningSecretKey
 };
-use ParagonIE\Sapient\Exception\InvalidMessageException;
+use LuminSports\Sapient\Exception\InvalidMessageException;
 use Psr\Http\Message\{
     RequestInterface,
     ResponseInterface
 };
-use ParagonIE\Sapient\Simple;
+use LuminSports\Sapient\Simple;
 
 /**
  * Trait StringSugar
- * @package ParagonIE\Sapient
+ * @package LuminSports\Sapient
  *
  * @method RequestInterface authenticateRequestWithSharedKey(RequestInterface $request, SharedAuthenticationKey $key)
  * @method ResponseInterface authenticateResponseWithSharedKey(ResponseInterface $response, SharedAuthenticationKey $key)

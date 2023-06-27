@@ -1,17 +1,17 @@
 <?php
 declare(strict_types=1);
-namespace ParagonIE\Sapient;
+namespace LuminSports\Sapient;
 
-use ParagonIE\Sapient\CryptographyKeys\{
+use LuminSports\Sapient\CryptographyKeys\{
     SealingPublicKey,
     SealingSecretKey,
     SharedEncryptionKey
 };
-use ParagonIE\Sapient\Exception\InvalidMessageException;
+use LuminSports\Sapient\Exception\InvalidMessageException;
 
 /**
  * Class Simple
- * @package ParagonIE\Sapient
+ * @package LuminSports\Sapient
  */
 abstract class Simple
 {

@@ -1,12 +1,12 @@
 <?php
 declare(strict_types=1);
-namespace ParagonIE\Sapient\Adapter\Generic;
+namespace LuminSports\Sapient\Adapter\Generic;
 
 use Psr\Http\Message\StreamInterface;
 
 /**
  * Class Stream
- * @package ParagonIE\Sapient\Adapter\Generic
+ * @package LuminSports\Sapient\Adapter\Generic
  *
  * This was copied from Slim Framework's implementation.
  *
@@ -199,7 +199,7 @@ class Stream implements StreamInterface
      * @see http://php.net/manual/en/language.oop5.magic.php#object.tostring
      * @return string
      */
-    public function __toString()
+    public function __toString(): string
     {
         if (!$this->isAttached()) {
             return '';
@@ -218,7 +218,7 @@ class Stream implements StreamInterface
      * @throws \TypeError
      * @return void
      */
-    public function close()
+    public function close(): void
     {
         if (!\is_resource($this->stream)) {
             throw new \TypeError();
@@ -240,7 +240,7 @@ class Stream implements StreamInterface
      * @return int|null Returns the size in bytes if known, or null if unknown.
      * @throws \TypeError
      */
-    public function getSize()
+    public function getSize(): ?int
     {
         if (!$this->size && $this->isAttached() === true) {
             if (!\is_resource($this->stream)) {
@@ -262,7 +262,7 @@ class Stream implements StreamInterface
      * @throws \RuntimeException on error.
      * @throws \TypeError
      */
-    public function tell()
+    public function tell(): int
     {
         if (!\is_resource($this->stream)) {
             throw new \TypeError();
@@ -284,7 +284,7 @@ class Stream implements StreamInterface
      * @return bool
      * @throws \TypeError
      */
-    public function eof()
+    public function eof(): bool
     {
         if (!\is_resource($this->stream)) {
             throw new \TypeError();
@@ -297,7 +297,7 @@ class Stream implements StreamInterface
      *
      * @return bool
      */
-    public function isReadable()
+    public function isReadable(): bool
     {
         if ($this->readable === null) {
             if ($this->isPipe()) {
@@ -326,7 +326,7 @@ class Stream implements StreamInterface
      *
      * @return bool
      */
-    public function isWritable()
+    public function isWritable(): bool
     {
         if ($this->writable === null) {
             $this->writable = false;
@@ -351,7 +351,7 @@ class Stream implements StreamInterface
      *
      * @return bool
      */
-    public function isSeekable()
+    public function isSeekable(): bool
     {
         if ($this->seekable === null) {
             $this->seekable = false;
@@ -381,7 +381,7 @@ class Stream implements StreamInterface
      * @throws \RuntimeException on failure.
      * @throws \TypeError
      */
-    public function seek($offset, $whence = SEEK_SET)
+    public function seek($offset, $whence = SEEK_SET): void
     {
         // Note that fseek returns 0 on success!
         if (!\is_resource($this->stream)) {
@@ -406,7 +406,7 @@ class Stream implements StreamInterface
      * @throws \RuntimeException on failure.
      * @throws \TypeError
      */
-    public function rewind()
+    public function rewind(): void
     {
         if (!\is_resource($this->stream)) {
             throw new \TypeError();
@@ -429,7 +429,7 @@ class Stream implements StreamInterface
      * @throws \RuntimeException if an error occurs.
      * @throws \TypeError
      */
-    public function read($length)
+    public function read($length): string
     {
         if (!\is_resource($this->stream)) {
             throw new \TypeError();
@@ -454,7 +454,7 @@ class Stream implements StreamInterface
      * @throws \RuntimeException on failure.
      * @throws \TypeError
      */
-    public function write($string)
+    public function write($string): int
     {
         if (!\is_resource($this->stream)) {
             throw new \TypeError();
@@ -481,7 +481,7 @@ class Stream implements StreamInterface
      *     reading.
      * @throws \TypeError
      */
-    public function getContents()
+    public function getContents(): string
     {
         if (!\is_resource($this->stream)) {
             throw new \TypeError();

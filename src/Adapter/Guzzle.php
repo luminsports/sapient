@@ -1,25 +1,25 @@
 <?php
 declare(strict_types=1);
-namespace ParagonIE\Sapient\Adapter;
+namespace LuminSports\Sapient\Adapter;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\Psr7\{
     Request,
     Response
 };
-use function GuzzleHttp\Psr7\stream_for;
+use GuzzleHttp\Psr7\Utils;
 use ParagonIE\ConstantTime\Base64UrlSafe;
-use ParagonIE\Sapient\Exception\{
+use LuminSports\Sapient\Exception\{
     InvalidMessageException
 };
-use ParagonIE\Sapient\CryptographyKeys\{
+use LuminSports\Sapient\CryptographyKeys\{
     SealingPublicKey,
     SharedAuthenticationKey,
     SharedEncryptionKey,
     SigningSecretKey
 };
-use ParagonIE\Sapient\Sapient;
-use ParagonIE\Sapient\Simple;
+use LuminSports\Sapient\Sapient;
+use LuminSports\Sapient\Simple;
 use Psr\Http\Message\{
     RequestInterface,
     ResponseInterface,
@@ -28,7 +28,7 @@ use Psr\Http\Message\{
 
 /**
  * Class Guzzle
- * @package ParagonIE\Sapient\Adapter
+ * @package LuminSports\Sapient\Adapter
  */
 class Guzzle implements AdapterInterface, ConvenienceInterface
 {
@@ -588,7 +588,7 @@ class Guzzle implements AdapterInterface, ConvenienceInterface
     public function stringToStream(string $input): StreamInterface
     {
         /** @var StreamInterface|null $stream */
-        $stream = stream_for($input);
+        $stream = Utils::streamFor($input);
         if (!($stream instanceof StreamInterface)) {
             throw new \TypeError('Could not convert string to a stream');
         }

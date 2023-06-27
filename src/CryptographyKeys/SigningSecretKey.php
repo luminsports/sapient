@@ -1,12 +1,12 @@
 <?php
 declare(strict_types=1);
-namespace ParagonIE\Sapient\CryptographyKeys;
+namespace LuminSports\Sapient\CryptographyKeys;
 
-use ParagonIE\Sapient\CryptographyKey;
+use LuminSports\Sapient\CryptographyKey;
 
 /**
  * Class SigningSecretKey
- * @package ParagonIE\Sapient
+ * @package LuminSports\Sapient
  */
 class SigningSecretKey extends CryptographyKey
 {

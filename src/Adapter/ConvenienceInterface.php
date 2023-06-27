@@ -1,11 +1,11 @@
 <?php
 declare(strict_types=1);
-namespace ParagonIE\Sapient\Adapter;
+namespace LuminSports\Sapient\Adapter;
 
-use ParagonIE\Sapient\Exception\{
+use LuminSports\Sapient\Exception\{
     InvalidMessageException
 };
-use ParagonIE\Sapient\CryptographyKeys\{
+use LuminSports\Sapient\CryptographyKeys\{
     SealingPublicKey,
     SharedAuthenticationKey,
     SharedEncryptionKey,
@@ -18,7 +18,7 @@ use Psr\Http\Message\{
 
 /**
  * Interface ConvenienceInterface
- * @package ParagonIE\Sapient\Adapter
+ * @package LuminSports\Sapient\Adapter
  */
 interface ConvenienceInterface
 {

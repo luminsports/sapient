@@ -1,10 +1,10 @@
 <?php
 declare(strict_types=1);
-namespace ParagonIE\Sapient\Exception;
+namespace LuminSports\Sapient\Exception;
 
 /**
  * Class InvalidMessage
- * @package ParagonIE\Sapient\Exception
+ * @package LuminSports\Sapient\Exception
  */
 class InvalidMessageException extends \Exception
 {

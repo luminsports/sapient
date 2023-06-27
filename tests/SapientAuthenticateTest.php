@@ -1,20 +1,20 @@
 <?php
-namespace ParagonIE\Sapient\UnitTests;
+namespace LuminSports\Sapient\UnitTests;
 
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\Psr7\Response;
 use ParagonIE\ConstantTime\Base64UrlSafe;
-use ParagonIE\Sapient\Adapter\Guzzle;
-use ParagonIE\Sapient\Exception\InvalidMessageException;
-use ParagonIE\Sapient\CryptographyKeys\{
+use LuminSports\Sapient\Adapter\Guzzle;
+use LuminSports\Sapient\Exception\InvalidMessageException;
+use LuminSports\Sapient\CryptographyKeys\{
     SharedAuthenticationKey
 };
-use ParagonIE\Sapient\Sapient;
+use LuminSports\Sapient\Sapient;
 use PHPUnit\Framework\TestCase;
 
 /**
  * Class SapientTest
- * @package ParagonIE\Sapient\UnitTests
+ * @package LuminSports\Sapient\UnitTests
  */
 class SapientAuthenticateTest extends TestCase
 {
@@ -58,8 +58,8 @@ class SapientAuthenticateTest extends TestCase
     }
 
     /**
-     * @covers \ParagonIE\Sapient\Adapter\Guzzle::createSymmetricAuthenticatedJsonRequest()
-     * @covers \ParagonIE\Sapient\Sapient::verifySymmetricAuthenticatedRequest()
+     * @covers \LuminSports\Sapient\Adapter\Guzzle::createSymmetricAuthenticatedJsonRequest()
+     * @covers \LuminSports\Sapient\Sapient::verifySymmetricAuthenticatedRequest()
      */
     public function testSignedJsonRequest()
     {
@@ -77,7 +77,7 @@ class SapientAuthenticateTest extends TestCase
             );
             $body = json_decode((string)$decoded->getBody(), true);
             $this->assertSame($obj, $body);
-            
+
             // Test the unhappy path
             $bad = $obj;
             $bad['bad'] = true;

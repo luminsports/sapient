@@ -1,15 +1,15 @@
 <?php
 declare(strict_types=1);
-namespace ParagonIE\Sapient;
+namespace LuminSports\Sapient;
 
 use ParagonIE\ConstantTime\Base64UrlSafe;
-use ParagonIE\Sapient\Adapter\AdapterInterface;
-use ParagonIE\Sapient\Adapter\Generic\Adapter;
-use ParagonIE\Sapient\Exception\{
+use LuminSports\Sapient\Adapter\AdapterInterface;
+use LuminSports\Sapient\Adapter\Generic\Adapter;
+use LuminSports\Sapient\Exception\{
     HeaderMissingException,
     InvalidMessageException
 };
-use ParagonIE\Sapient\CryptographyKeys\{
+use LuminSports\Sapient\CryptographyKeys\{
     SealingPublicKey,
     SealingSecretKey,
     SharedAuthenticationKey,
@@ -17,7 +17,7 @@ use ParagonIE\Sapient\CryptographyKeys\{
     SigningPublicKey,
     SigningSecretKey
 };
-use ParagonIE\Sapient\Traits\JsonSugar;
+use LuminSports\Sapient\Traits\JsonSugar;
 use Psr\Http\Message\{
     RequestInterface,
     ResponseInterface,
@@ -27,7 +27,7 @@ use SodiumException;
 
 /**
  * Class Sapient
- * @package ParagonIE\Sapient
+ * @package LuminSports\Sapient
  *
  * These methods are provided by the adapter:
  * @method RequestInterface createSymmetricAuthenticatedJsonRequest(string $method, string $uri, array $arrayToJsonify, SharedAuthenticationKey $key, array $headers = [])

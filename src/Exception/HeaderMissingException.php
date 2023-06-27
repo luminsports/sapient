@@ -1,9 +1,9 @@
 <?php
-namespace ParagonIE\Sapient\Exception;
+namespace LuminSports\Sapient\Exception;
 
 /**
  * Class HeaderMissing
- * @package ParagonIE\Sapient\Exception
+ * @package LuminSports\Sapient\Exception
  */
 class HeaderMissingException extends \Exception
 {

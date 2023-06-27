@@ -1,3 +1,7 @@
+# This is a fork of Paragonie Sapient
+
+Dependencies have been updated, but we are not intending to maintain this package any further.
+
 # Sapient: Secure API toolkit
 
 [![Build Status](https://github.com/paragonie/sapient/actions/workflows/ci.yml/badge.svg)](https://github.com/paragonie/sapient/actions)
@@ -85,8 +89,8 @@ existing PSR-7 HTTP responses.
 ```php
 <?php
 use ParagonIE\ConstantTime\Base64UrlSafe;
-use ParagonIE\Sapient\Sapient;
-use ParagonIE\Sapient\CryptographyKeys\SigningSecretKey;
+use LuminSports\Sapient\Sapient;
+use LuminSports\Sapient\CryptographyKeys\SigningSecretKey;
 use Psr\Http\Message\ResponseInterface;
 
 /**
@@ -111,9 +115,9 @@ $signedResponse = $sapient->signResponse($response, $serverSignSecret);
 ```php
 <?php
 use ParagonIE\ConstantTime\Base64UrlSafe;
-use ParagonIE\Sapient\Sapient;
-use ParagonIE\Sapient\CryptographyKeys\SigningPublicKey;
-use ParagonIE\Sapient\Exception\{
+use LuminSports\Sapient\Sapient;
+use LuminSports\Sapient\CryptographyKeys\SigningPublicKey;
+use LuminSports\Sapient\Exception\{
     HeaderMissingException,
     InvalidMessageException
 };
@@ -153,11 +157,11 @@ described in [`ConvenienceInterface`](docs/Internals/Adapter/ConvenienceInterfac
 <?php
 use GuzzleHttp\Client;
 use ParagonIE\ConstantTime\Base64UrlSafe;
-use ParagonIE\Sapient\Adapter\Guzzle as GuzzleAdapter;
-use ParagonIE\Sapient\Sapient;
-use ParagonIE\Sapient\CryptographyKeys\SigningPublicKey;
-use ParagonIE\Sapient\CryptographyKeys\SigningSecretKey;
-use ParagonIE\Sapient\Exception\InvalidMessageException;
+use LuminSports\Sapient\Adapter\Guzzle as GuzzleAdapter;
+use LuminSports\Sapient\Sapient;
+use LuminSports\Sapient\CryptographyKeys\SigningPublicKey;
+use LuminSports\Sapient\CryptographyKeys\SigningSecretKey;
+use LuminSports\Sapient\Exception\InvalidMessageException;
 
 $http = new Client([
     'base_uri' => 'https://your-api.example.com'
@@ -213,11 +217,11 @@ try {
 use GuzzleHttp\Client;
 use GuzzleHttp\Psr7\ServerRequest;
 use ParagonIE\ConstantTime\Base64UrlSafe;
-use ParagonIE\Sapient\Adapter\Guzzle as GuzzleAdapter;
-use ParagonIE\Sapient\Sapient;
-use ParagonIE\Sapient\CryptographyKeys\SigningPublicKey;
-use ParagonIE\Sapient\CryptographyKeys\SigningSecretKey;
-use ParagonIE\Sapient\Exception\InvalidMessageException;
+use LuminSports\Sapient\Adapter\Guzzle as GuzzleAdapter;
+use LuminSports\Sapient\Sapient;
+use LuminSports\Sapient\CryptographyKeys\SigningPublicKey;
+use LuminSports\Sapient\CryptographyKeys\SigningSecretKey;
+use LuminSports\Sapient\Exception\InvalidMessageException;
 
 $http = new Client([
     'base_uri' => 'https://your-api.example.com'
