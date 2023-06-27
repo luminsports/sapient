@@ -1,12 +1,12 @@
 <?php
-namespace LuminSports\Sapient\UnitTests;
+namespace Paragonie\Sapient\UnitTests;
 
-use LuminSports\Sapient\CryptographyKeys\{
+use Paragonie\Sapient\CryptographyKeys\{
     SealingPublicKey,
     SealingSecretKey,
     SharedEncryptionKey
 };
-use LuminSports\Sapient\Simple;
+use Paragonie\Sapient\Simple;
 use PHPUnit\Framework\TestCase;
 
 class SimpleTest extends TestCase

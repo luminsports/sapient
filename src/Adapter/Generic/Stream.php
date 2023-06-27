@@ -1,12 +1,12 @@
 <?php
 declare(strict_types=1);
-namespace LuminSports\Sapient\Adapter\Generic;
+namespace Paragonie\Sapient\Adapter\Generic;
 
 use Psr\Http\Message\StreamInterface;
 
 /**
  * Class Stream
- * @package LuminSports\Sapient\Adapter\Generic
+ * @package Paragonie\Sapient\Adapter\Generic
  *
  * This was copied from Slim Framework's implementation.
  *

@@ -1,12 +1,12 @@
 <?php
 declare(strict_types=1);
-namespace LuminSports\Sapient\CryptographyKeys;
+namespace Paragonie\Sapient\CryptographyKeys;
 
-use LuminSports\Sapient\CryptographyKey;
+use Paragonie\Sapient\CryptographyKey;
 
 /**
  * Class SealingPublicKey
- * @package LuminSports\Sapient
+ * @package Paragonie\Sapient
  */
 class SealingPublicKey extends CryptographyKey
 {

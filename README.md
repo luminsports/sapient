@@ -89,8 +89,8 @@ existing PSR-7 HTTP responses.
 ```php
 <?php
 use ParagonIE\ConstantTime\Base64UrlSafe;
-use LuminSports\Sapient\Sapient;
-use LuminSports\Sapient\CryptographyKeys\SigningSecretKey;
+use Paragonie\Sapient\Sapient;
+use Paragonie\Sapient\CryptographyKeys\SigningSecretKey;
 use Psr\Http\Message\ResponseInterface;
 
 /**
@@ -115,9 +115,9 @@ $signedResponse = $sapient->signResponse($response, $serverSignSecret);
 ```php
 <?php
 use ParagonIE\ConstantTime\Base64UrlSafe;
-use LuminSports\Sapient\Sapient;
-use LuminSports\Sapient\CryptographyKeys\SigningPublicKey;
-use LuminSports\Sapient\Exception\{
+use Paragonie\Sapient\Sapient;
+use Paragonie\Sapient\CryptographyKeys\SigningPublicKey;
+use Paragonie\Sapient\Exception\{
     HeaderMissingException,
     InvalidMessageException
 };
@@ -157,11 +157,11 @@ described in [`ConvenienceInterface`](docs/Internals/Adapter/ConvenienceInterfac
 <?php
 use GuzzleHttp\Client;
 use ParagonIE\ConstantTime\Base64UrlSafe;
-use LuminSports\Sapient\Adapter\Guzzle as GuzzleAdapter;
-use LuminSports\Sapient\Sapient;
-use LuminSports\Sapient\CryptographyKeys\SigningPublicKey;
-use LuminSports\Sapient\CryptographyKeys\SigningSecretKey;
-use LuminSports\Sapient\Exception\InvalidMessageException;
+use Paragonie\Sapient\Adapter\Guzzle as GuzzleAdapter;
+use Paragonie\Sapient\Sapient;
+use Paragonie\Sapient\CryptographyKeys\SigningPublicKey;
+use Paragonie\Sapient\CryptographyKeys\SigningSecretKey;
+use Paragonie\Sapient\Exception\InvalidMessageException;
 
 $http = new Client([
     'base_uri' => 'https://your-api.example.com'
@@ -217,11 +217,11 @@ try {
 use GuzzleHttp\Client;
 use GuzzleHttp\Psr7\ServerRequest;
 use ParagonIE\ConstantTime\Base64UrlSafe;
-use LuminSports\Sapient\Adapter\Guzzle as GuzzleAdapter;
-use LuminSports\Sapient\Sapient;
-use LuminSports\Sapient\CryptographyKeys\SigningPublicKey;
-use LuminSports\Sapient\CryptographyKeys\SigningSecretKey;
-use LuminSports\Sapient\Exception\InvalidMessageException;
+use Paragonie\Sapient\Adapter\Guzzle as GuzzleAdapter;
+use Paragonie\Sapient\Sapient;
+use Paragonie\Sapient\CryptographyKeys\SigningPublicKey;
+use Paragonie\Sapient\CryptographyKeys\SigningSecretKey;
+use Paragonie\Sapient\Exception\InvalidMessageException;
 
 $http = new Client([
     'base_uri' => 'https://your-api.example.com'

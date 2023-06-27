@@ -1,6 +1,6 @@
 # Simple Encryption Abstraction
 
-Canonical name: `LuminSports\Sapient\Simple`
+Canonical name: `Paragonie\Sapient\Simple`
 
 ## Shared-Key Encryption
 
@@ -18,8 +18,8 @@ Messages are Base64url encoded in transmission.
 ----
 
 * PHP: 
-  * `LuminSports\Sapient\Simple::encrypt()`
-  * `LuminSports\Sapient\Simple::decrypt()`
+  * `Paragonie\Sapient\Simple::encrypt()`
+  * `Paragonie\Sapient\Simple::decrypt()`
 
 ## Public-Key Encryption
 
@@ -58,5 +58,5 @@ Messages are Base64url encoded in transmission.
 ----
 
 * PHP: 
-  * `LuminSports\Sapient\Simple::seal()`
-  * `LuminSports\Sapient\Simple::unseal()`
+  * `Paragonie\Sapient\Simple::seal()`
+  * `Paragonie\Sapient\Simple::unseal()`

@@ -1,6 +1,6 @@
 # Sapient - Class Documentation
 
-Canonical name: `LuminSports\Sapient\Sapient`
+Canonical name: `Paragonie\Sapient\Sapient`
 
 ## Important
 

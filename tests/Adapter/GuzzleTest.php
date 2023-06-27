@@ -1,12 +1,12 @@
 <?php
-namespace LuminSports\Sapient\UnitTests\Adapter;
+namespace Paragonie\Sapient\UnitTests\Adapter;
 
 use GuzzleHttp\Psr7\{
     Request,
     Response
 };
-use LuminSports\Sapient\Adapter\Guzzle;
-use LuminSports\Sapient\CryptographyKeys\{
+use Paragonie\Sapient\Adapter\Guzzle;
+use Paragonie\Sapient\CryptographyKeys\{
     SealingPublicKey,
     SealingSecretKey,
     SharedAuthenticationKey,

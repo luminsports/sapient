@@ -19,7 +19,7 @@
   },
   "autoload": {
     "psr-4": {
-      "LuminSports\\Sapient\\": "src"
+      "Paragonie\\Sapient\\": "src"
     }
   },
   "license": "MIT",

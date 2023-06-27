@@ -1,13 +1,13 @@
 <?php
 declare(strict_types=1);
-namespace LuminSports\Sapient\Adapter\Generic;
+namespace Paragonie\Sapient\Adapter\Generic;
 
-use LuminSports\Sapient\Adapter\AdapterInterface;
+use Paragonie\Sapient\Adapter\AdapterInterface;
 use Psr\Http\Message\StreamInterface;
 
 /**
  * Class Guzzle
- * @package LuminSports\Sapient\Adapter
+ * @package Paragonie\Sapient\Adapter
  */
 class Adapter implements AdapterInterface
 {

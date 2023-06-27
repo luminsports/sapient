@@ -1,7 +1,7 @@
 <?php
-namespace LuminSports\Sapient\UnitTests\Adapter;
+namespace Paragonie\Sapient\UnitTests\Adapter;
 
-use LuminSports\Sapient\Adapter\Generic\Adapter;
+use Paragonie\Sapient\Adapter\Generic\Adapter;
 use PHPUnit\Framework\TestCase;
 use Psr\Http\Message\StreamInterface;
 

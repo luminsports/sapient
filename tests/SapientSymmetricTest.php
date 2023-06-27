@@ -1,21 +1,21 @@
 <?php
-namespace LuminSports\Sapient\UnitTests;
+namespace Paragonie\Sapient\UnitTests;
 
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\Psr7\Response;
 use ParagonIE\ConstantTime\Base64UrlSafe;
-use LuminSports\Sapient\Adapter\Guzzle;
-use LuminSports\Sapient\Exception\InvalidMessageException;
-use LuminSports\Sapient\CryptographyKeys\{
+use Paragonie\Sapient\Adapter\Guzzle;
+use Paragonie\Sapient\Exception\InvalidMessageException;
+use Paragonie\Sapient\CryptographyKeys\{
     SharedAuthenticationKey,
     SharedEncryptionKey
 };
-use LuminSports\Sapient\Sapient;
+use Paragonie\Sapient\Sapient;
 use PHPUnit\Framework\TestCase;
 
 /**
  * Class SapientTest
- * @package LuminSports\Sapient\UnitTests
+ * @package Paragonie\Sapient\UnitTests
  */
 class SapientSymmetricTest extends TestCase
 {

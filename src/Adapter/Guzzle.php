@@ -1,6 +1,6 @@
 <?php
 declare(strict_types=1);
-namespace LuminSports\Sapient\Adapter;
+namespace Paragonie\Sapient\Adapter;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\Psr7\{
@@ -9,17 +9,17 @@ use GuzzleHttp\Psr7\{
 };
 use GuzzleHttp\Psr7\Utils;
 use ParagonIE\ConstantTime\Base64UrlSafe;
-use LuminSports\Sapient\Exception\{
+use Paragonie\Sapient\Exception\{
     InvalidMessageException
 };
-use LuminSports\Sapient\CryptographyKeys\{
+use Paragonie\Sapient\CryptographyKeys\{
     SealingPublicKey,
     SharedAuthenticationKey,
     SharedEncryptionKey,
     SigningSecretKey
 };
-use LuminSports\Sapient\Sapient;
-use LuminSports\Sapient\Simple;
+use Paragonie\Sapient\Sapient;
+use Paragonie\Sapient\Simple;
 use Psr\Http\Message\{
     RequestInterface,
     ResponseInterface,
@@ -28,7 +28,7 @@ use Psr\Http\Message\{
 
 /**
  * Class Guzzle
- * @package LuminSports\Sapient\Adapter
+ * @package Paragonie\Sapient\Adapter
  */
 class Guzzle implements AdapterInterface, ConvenienceInterface
 {
